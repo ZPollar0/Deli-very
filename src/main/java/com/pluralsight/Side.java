@@ -1,12 +1,12 @@
 package com.pluralsight;
 
 
-public class Toppings {
+public class Side {
     //Variable
     private String name;
 
     //Constructor
-    public Toppings(String name) {
+    public Side(String name) {
         this.name = name;
     }
     public String getName() {

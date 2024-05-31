@@ -6,7 +6,7 @@ class Sandwich {
     // Create variables, as private.
     private List<Meat> meats;
     private List<Cheese> cheeses;
-    private List<Topping> toppings;
+    private List<Toppings> toppings;
     private List<Sauce> sauces;
     private List<Side> sides;
     private boolean toasted;
@@ -36,7 +36,7 @@ class Sandwich {
         cheeses.add(cheese);
     }
 
-    public void addTopping(Topping topping) {
+    public void addTopping(Toppings topping) {
         toppings.add(topping);
     }
 
@@ -60,7 +60,7 @@ class Sandwich {
         return size;
     }
 
-    public List<Topping> getToppings() {
+    public List<Toppings> getToppings() {
         return toppings;
     }
 
@@ -118,7 +118,7 @@ class Sandwich {
 
         // Add topping details.
         description.append("\nToppings: ");
-        for (Topping topping : toppings) {
+        for (Toppings topping : toppings) {
             description.append(topping.getName()).append(", ");
         }
 
@@ -160,7 +160,7 @@ class Sandwich {
     // Create removeTopping method.
     public void removeTopping(String toppingName) {
         for (int i = 0; i < toppings.size(); i++) {
-            Topping topping = toppings.get(i);
+            Toppings topping = toppings.get(i);
             if (topping.getName().equalsIgnoreCase(toppingName)) {
                 toppings.remove(i);
                 return;

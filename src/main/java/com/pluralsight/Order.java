@@ -3,7 +3,7 @@ package com.pluralsight;
 import java.util.ArrayList;
 import java.util.List;
 
-class Order {
+public class Order {
     // Create variables, as private.
     private List<Sandwich> sandwiches;
     private List<Drink> drinks;
