@@ -623,7 +623,7 @@ public class UserInterface {
         // Print side options.
         System.out.println("\nSelect your side:");
         System.out.println("1) Au Jus");
-        System.out.println("2) Sauce");
+        System.out.println("2) Fries");
 
         // Ask user for their choice.
         System.out.print("Enter your choice: ");
@@ -644,7 +644,7 @@ public class UserInterface {
                     order.addSide(new Side("Au Jus"));
                     break;
                 case 2:
-                    order.addSide(new Side("Sauce"));
+                    order.addSide(new Side("Fries"));
                     break;
                 default:
                     System.out.println("Invalid side choice:");
